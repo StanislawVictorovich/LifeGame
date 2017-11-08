@@ -1,0 +1,103 @@
+h1 {
+    font-family: monospace;
+    font-size: 45px;
+    text-align: center;
+    color: green;
+    text-shadow: green 0 0 4px;
+    color: transparent;
+}
+
+.redButton {
+    position: relative;
+    display: inline-block;
+    width: 10em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid #F64C2B;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+    background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+    margin-bottom: 10px;
+}
+
+.redButton:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset; 
+}
+
+.redButton:hover {
+    text-shadow: 0px 1px 3px #000;
+}
+
+#workTable {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+
+#mainTable {
+    width: auto;
+}
+
+input[type="text"] {
+    border: 1px solid #cccccc; 
+    border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -khtml-border-radius: 3px; 
+    background: #ffffff !important; 
+    outline: none; 
+    height: 24px; 
+    width: 120px; 
+    color: #cccccc;
+    margin-bottom: 10px;
+ }
+
+input[type="text"]:focus {
+    color: #000000;
+    border: 1px solid #000000
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #808080;
+}
+
+.dead_cell {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border: solid 0.1em #EFEFEF;
+    border-style: dotted;
+}
+
+.live_cell {
+    background-color: green;
+    width: 12px;
+    height: 12px;
+}
+
+#td_caption {
+    background: -moz-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), 
+        color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb)); 
+}
+
+#td_optionsBlock {
+    background-image: radial-gradient(cyan, indigo);
+}
+
+#td_workTable {
+    background-image: radial-gradient(circle, cyan, indigo);
+}
+
+#statusBar {
+    background-image: radial-gradient(circle, cyan, #FFFFFF);
+    font-family: Courier;
+}

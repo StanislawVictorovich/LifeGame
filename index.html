@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Life game</title> 
+        <link rel='stylesheet' type='text/css' href='css/style.css'>
+        <script type='text/javascript' src='js/jquery-2.1.4.min.js'></script> 
+        <script type='text/javascript' src='js/js_life.js'></script>
+    </head>
+    <body>
+            <table width='100%' border='3' cellspacing='5' cellpadding='5' id='mainTable' > 
+            <tr> 
+                <td colspan='2' id='td_caption'><h1>Life game</h1></td>
+            </tr>
+            <tr>
+                <td width='120' id='td_optionsBlock'>
+                    <div id='optionsBlock'>
+                        <input type='text' name='timer' value='200' required pattern='^[0-9]+$'/> timer
+                        <input type='text' name='cols' value='40'  required pattern='^[0-9]+$'/> cols 
+                        <input type='text' name='rows' value='40'  required pattern='^[0-9]+$'/>   rows 
+                        <div id='buttonSet' class='redButton'>Set</div>
+                    </div>  
+                    <div id='controlBlock'>
+                        <div id='buttonStart' class='redButton'>Start</div>
+                        <div id='buttonClear' class='redButton'>Clear</div>
+                        <div id='buttonGosperGun' class='redButton'>Gosper Gun</div>
+                        <div id='buttonNineTeen' class='redButton'>90</div>
+                        <div id='buttonInvert' class='redButton'>Invert</div>
+                        <div id='buttonRandom' class='redButton'>Random</div>
+                    </div>
+                </td>
+                <td width='100%' id='td_workTable'>
+                    <table id='workTable'></table>
+                </td>
+            </tr>          
+            <tr><td colspan="2" id='statusBar'><div id='statusText'>Please, set parameters.</div></td></tr>        
+            </table>
+        <script type="text/javascript">
+            $('body').on('click','#workTable td',function()
+            {
+                cellToggleFade(this);
+            });
+        </script>
+    </body>
+</html>
